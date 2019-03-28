@@ -1,24 +1,46 @@
-.App {
+body {
+  background-color: lightblue;
+}
+
+.GIFcontainer {
+  width: 400px;
+  margin: 20px;
+}
+
+.GIFcontainer ul li, .GIFcontainer ul li a {
+  width: 350px;
+}
+
+@media (max-width: 400px) {
+  .GIFpic {
+    width: 100vw;
+  }
+
+  .GIFcontainer {
+    margin: 10px 0 10px 0;
+  }
+}
+
+.page {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 20px auto;
+  width: 800px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+@media (max-width: 800px) {
+  .title {
+    width: 100vw;
+  }
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.buttons {
+  width: 300px;
+  margin: 20px auto;
 }
